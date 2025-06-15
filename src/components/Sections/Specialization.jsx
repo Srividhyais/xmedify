@@ -20,27 +20,29 @@ export default function Specialization() {
     { icon: icon7, title: "X-Ray" },
   ];
 
-  return (
+ return (
     <Box py={6} sx={{ background: "linear-gradient(#E7F0FF, #E8F1FF)" }}>
-      <Container sx={{ textAlign: "center" }}>
-        <Typography variant="h2" mb={4}>
+      <Container maxWidth="lg" sx={{ textAlign: "center" }}>
+        <Typography variant="h4" mb={4}>
           Find by specialisation
         </Typography>
 
         <Grid
           container
-          spacing={{ xs: 1, md: 3 }}
+          spacing={{ xs: 2, md: 3 }}
           mb={5}
-          justifyContent={"center"}
+          justifyContent="center"
         >
           {data.map((item) => (
-            <Grid item xs={4} md={3} key={item.title}>
-              <IconCard
-                img={item.icon}
-                title={item.title}
-                bgColor={"#FFFFFF"}
-                shadow={true}
-              />
+            <Grid item xs={12} sm={6} md={3} key={item.title}>
+              <Box sx={{ width: '100%' }}>
+                <IconCard
+                  img={item.icon}
+                  title={item.title}
+                  bgColor="#FFFFFF"
+                  shadow={true}
+                />
+              </Box>
             </Grid>
           ))}
         </Grid>

@@ -6,7 +6,7 @@ import img2 from "../../assets/ahmad.jpg";
 import img3 from "../../assets/heena.jpg";
 import img4 from "../../assets/ankur.jpg";
 import img5 from "../../assets/ahmad-stevens.jpg";
-import SpecialistCard from "./Specialization";
+import SpecialistCard from "././SplCard";
 import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Specialists() {
@@ -24,29 +24,28 @@ export default function Specialists() {
   ];
 
   return (
-    <Box py={4} id="find-doctors">
-      <Typography variant="h2" textAlign="center" mb={3} px={2}>
+    <Box pt={2} pb={1} id="find-doctors">
+      <Typography variant="h2" textAlign="center" mb={2} px={2}>
         Our Medical Specialist
       </Typography>
       <Swiper
-        slidesPerView={2}
-        spaceBetween={20}
-        loop={true}
-        centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay, Pagination]}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          767: {
-            slidesPerView: 4,
-          },
-        }}
-      >
+  slidesPerView={2}
+  spaceBetween={8}
+  loop={true}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  modules={[Autoplay, Pagination]}
+  pagination={{
+    clickable: true,
+  }}
+  breakpoints={{
+    767: {
+      slidesPerView: 4,
+    },
+  }}
+>
         {specialist_data.map((doc, index) => (
           <SwiperSlide key={index}>
             <SpecialistCard

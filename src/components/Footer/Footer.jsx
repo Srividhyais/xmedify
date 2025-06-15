@@ -20,10 +20,10 @@ function FooterLink({ children }) {
 
 export default function Footer() {
   return (
-    <Box bgcolor="#0d47a1" pb={3} pt={6}>
-      <Container maxWidth="xl">
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={4.5}>
+    <Box bgcolor="#0d47a1" pb={3} pt={4}>
+      <Container maxWidth="lg">
+        <Grid container spacing={4} wrap="nowrap">
+          <Grid item xs={12} md={3}>
             <Stack alignItems="flex-start" justifyContent="space-between" height={1}>
               <Box src={logo} height={36} alt="Medify" component="img" mb={2} />
               <Stack direction="row" spacing={1.5}>

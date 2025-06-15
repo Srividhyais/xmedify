@@ -8,22 +8,22 @@ import SmsForm from "./smsForm";
 
 export default function DownloadApp() {
   return (
-    <Box
-      sx={{ background: "linear-gradient(#E7F0FF 100%, #E8F1FF 47%)", pt: 5 }}
-    >
+    <Box sx={{ background: "linear-gradient(#E7F0FF 100%, #E8F1FF 47%)", pt: 2, pb: 2 }}>
       <Container>
-        <Grid container spacing={3} alignItems="center">
-          <Grid item xs={12} md={5.5}>
-            <Box src={mobile} component="img" width={1} height="auto" />
+        <Grid container spacing={1.5} alignItems="center" wrap="nowrap">
+          <Grid item xs={12} md={4}>
+            <Box src={mobile} component="img" width="100%" maxHeight={400} />
+
           </Grid>
 
           <Grid item xs={12} md={6.5}>
             <Box
-              position="relative"
-              pl={{ xs: "36px", md: "50px" }}
-              mb={{ xs: 4, md: 0 }}
-            >
-              <Typography variant="h2" mb={2}>
+  position="relative"
+  pl={{ xs: "36px", md: "50px" }}
+  mb={{ xs: 4, md: 0 }}  
+>
+
+              <Typography variant="h2" mb={1.5}>
                 Download the
                 <br />
                 <Box component="span" color="primary.main">
@@ -43,10 +43,8 @@ export default function DownloadApp() {
 
               <SmsForm />
 
-              <Stack
-                direction={{ xs: "column", md: "row" }}
-                spacing={{ xs: 1, md: 2 }}
-              >
+             <Stack direction={{ xs: "column", md: "row" }} spacing={{ xs: 0.5, md: 1 }}>
+
                 <Button
                   sx={{
                     bgcolor: "#333",

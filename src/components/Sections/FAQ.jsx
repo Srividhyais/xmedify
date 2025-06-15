@@ -27,17 +27,27 @@ export default function FAQs() {
   ];
 
   return (
-    <Box py={4}>
-      <Container maxWidth="xl">
+    <Box>
+      <Container maxWidth="lg">
         <Typography color="primary.main" fontWeight={600} textAlign="center">
           Get Your Answer
         </Typography>
         <Typography textAlign="center" variant="h2" mb={2}>
           Frequently Asked Questions
         </Typography>
-        <Grid container alignItems="center" spacing={5}>
+        <Grid container alignItems="center" spacing={5} wrap="nowrap">
           <Grid item xs={12} md={6}>
-            <Box src={faqBanner} component="img" width={1} height="auto" />
+            <Box
+  component="img"
+  src={faqBanner}
+  sx={{
+    width: "100%",      
+    height: 300,        
+    objectFit: "cover",  
+    borderRadius: 2
+  }}
+/>
+
           </Grid>
 
           <Grid item xs={12} md={6}>

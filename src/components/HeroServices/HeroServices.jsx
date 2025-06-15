@@ -34,10 +34,11 @@ export default function HeroServices() {
       <Grid
         container
         columnSpacing={{ xs: 1, md: 2 }}
-        justifyContent={"center"}
+        justifyContent={"space-evenly"}
+        sx={{width: "100%"}}
       >
         {Services.map((service) => (
-          <Grid item key={service.title} xs={4} md={2.4}>
+          <Grid item key={service.title} xs={6} md={2} sm={4}>
             <IconCard
               img={service.img}
               title={service.title}

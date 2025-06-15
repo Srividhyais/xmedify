@@ -4,8 +4,18 @@ import person from "../../assets/person.jpg";
 
 export default function BlogCard() {
   return (
-    <Box border="1px solid rgba(0,0,0,0.1)" borderRadius={2}>
-      <Box component="img" src={featured} width={1} />
+    <Box
+  border="1px solid rgba(0,0,0,0.1)"
+  borderRadius={2}
+  overflow="hidden"
+  sx={{ width: "100%", height: "100%" }}  // add width: 100%
+>
+
+      <Box
+        component="img"
+        src={featured}
+        sx={{ width: "100%", height: "auto", display: "block" }}
+      />
       <Box p={2}>
         <Typography
           color="#77829D"
@@ -26,7 +36,13 @@ export default function BlogCard() {
           6 Tips To Protect Your Mental Health When You're Sick
         </Typography>
         <Stack direction="row" spacing={1} alignItems="center">
-          <Box component="img" src={person} height={32} width={32} />
+          <Box
+            component="img"
+            src={person}
+            height={32}
+            width={32}
+            sx={{ borderRadius: "50%" }}
+          />
           <Typography color="#1B3C74" fontSize={{ xs: 12, md: 16 }}>
             Rebecca Lee
           </Typography>

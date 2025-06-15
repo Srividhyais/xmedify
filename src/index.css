@@ -59,7 +59,7 @@ h6 {
 .swiper-pagination {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   margin-top: 28px;
   padding-bottom: 5px;
 }
@@ -75,5 +75,5 @@ h6 {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #2aa7ff;
   outline: 1px solid #2aa7ff;
-  outline-offset: 4px;
+  outline-offset: 2px;
 }

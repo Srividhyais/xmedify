@@ -6,8 +6,9 @@ export default function SpecialistCard({ img, title, designation }) {
       <Box
         component="img"
         src={img}
-        width={1}
-        sx={{
+        width="90%"
+        height={450}
+          sx={{
           boxShadow: "0 15px 55px -10px rgba(0,0,0,0.09)",
           borderRadius: "250px 240px 4px 4px",
         }}

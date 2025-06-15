@@ -11,6 +11,7 @@ export default function IconCard({
     <Stack
       spacing={2}
       alignItems="center"
+      width="100%" 
       bgcolor={active ? "rgba(42,167,255,0.08)" : bgColor}
       p={3}
       borderRadius={2}
